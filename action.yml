@@ -1,0 +1,14 @@
+name: 'Actions Test'
+description: 'My first Github action'
+inputs:
+  a-name:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time:
+    description: 'The time the action ran'
+runs:
+  using: 'node16'
+  main: 'index.js'
+
